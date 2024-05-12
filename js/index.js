@@ -253,7 +253,7 @@ window.onload = function () {
   var merrywrap = document.getElementById("merrywrap");
   var box = merrywrap.getElementsByClassName("giftbox")[0];
   var step = 1;
-  var stepMinutes = [2000, 200, 200, 200];
+  var stepMinutes = [2000, 1000, 500, 1000];
   function init() {
     box.addEventListener("click", openBox, false);
   }
