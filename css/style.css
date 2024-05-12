@@ -7,6 +7,9 @@ html, body, .container {
 body {
   background: #e74;
   overflow: hidden;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: linear-gradient(to bottom, #190e14, #0d0d4b 30%, #c76075 80%, #e9b64b 95%);
   background-image: radial-gradient(circle at center bottom, #e9b64b, #c76075 15%, #0d0d4b 75%, #190e14 90%);
 }
@@ -152,11 +155,14 @@ div#sea {
 }
 
 .icons {
+  position: absolute;
   justify-content: center;
+  left: 10;
+  right: 10;
   margin-top: 2%;
   /* top:50%;
   width: 100%;*/
-  height: auto;
+  /* height: auto; */
   transform: translateY(10px) rotate(-10deg);
 }
 
@@ -436,11 +442,6 @@ audio {
     background-size: 100%;
   }
 
-  div#video {
-    right: 290px;
-    bottom: 235px;
-  }
-
   .moon {
     right: 230px;
   }
@@ -448,8 +449,11 @@ audio {
 
 @media(max-width: 720px) {
   .moon {
-    top: -10px;
-    right: -20px;
+    top: 100px;
+    right: 20px;
+  }
+  .icons {
+    margin-top: 40px;
   }
   .icons .row span {
     font-size: 30px;
