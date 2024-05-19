@@ -24,7 +24,7 @@ canvas#canvas {
 }
 
 div#beach {
-  background-image: url(https://dl.dropbox.com/s/oe0oce2udq44bj5/beachsil2.png);
+  background-image: url(../beachsil2.png);
   /* background-size: cover; */
   background-position: bottom right;
   background-size: 1700px;
@@ -36,6 +36,14 @@ div#beach {
   bottom: 65px;
   left: 40px;
   width: 140px;
+}
+
+#photo {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-35%);
 }
 
 #car {
@@ -163,7 +171,6 @@ div#sea {
   /* top:50%;
   width: 100%;*/
   /* height: auto; */
-  transform: translateY(10px) rotate(-10deg);
 }
 
 audio {
@@ -456,7 +463,12 @@ audio {
     margin-top: 40px;
   }
   .icons .row span {
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  #photo {
+    width: 300px;
+    transform: translate(-50%,-50%);
   }
 }
 
